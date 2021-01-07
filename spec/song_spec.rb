@@ -69,7 +69,7 @@ describe 'Song' do
       expect(song_2.artist).to be_an(Artist)
       expect(song_2.artist.name).to eq("Michael Jackson")
 
-      expect(Artist.all.length).to eq(2)
+      expect(Artist.all.length).to eq(1)
     end
   end
 end

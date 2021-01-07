@@ -18,7 +18,9 @@ class Song
     song = self.new(splt_name[1])
     artist = Artist.find_or_create_by_name(splt_name[0])
     song.artist = artist 
-    
+    artist.add_song (song)
+    song 
+  end 
   
   def self.all 
     @@all 

@@ -13,7 +13,7 @@ class Song
     artist.add_song(self)
   end
 
-  def self.new_by_filename(file)
+  def self.new_by_filename(filename)
     splt_name = filename.split(" - ").chomp(".mp3")
     song = self.new(splt_name[1])
     artist = Artist.find_or_create_by_name(splt_name[0])
